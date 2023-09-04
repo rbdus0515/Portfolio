@@ -9,5 +9,86 @@ body {
 
 main {
     width: 1920px;
-    height: auto;
+    height: 1080px;
+    display: flex;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+
 }
+
+div, section {
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+/* ------------------------------------ */
+
+/* 왼쪽 부분 */
+
+/* 미모티콘 좌, 상 마진 */
+#my-img {
+    margin-top: 113px;
+    margin-left: 165px;
+}
+
+#N-P-E {
+    margin-left: 165px;
+    margin-top: 50px;
+}
+
+#M-name {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#M-phone, #M-email {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+#W-F-B {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-left: 165px;
+    display: flex;
+}
+
+#W-D, #F-E, #B-E {
+    border: 2px solid white;
+    border-radius: 50px;
+    padding-inline: 20px;
+    margin-right : 45px;
+}
+
+/* -------------------------------------- */
+
+/* 오른쪽 부분 */
+
+#right-main {
+    font-size: 170px;
+    margin-top: 150px;
+    margin-left: 150px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile {
+    color: blueviolet;
+}
+
+#one, #two, #three {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* 밑에 01, 02, 03 숫자를 부모랑 묶고 부모마다
+    사이즈를 다르게 만들어서 우측하단에 위치하도록 수정
+
+
+    시간이 된다면 깃허브,벨로그 주소
+    추가할만한 위치 선정, url로 묶어서 코딩
+*/
