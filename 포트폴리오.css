@@ -21,6 +21,36 @@ div, section {
     /* border: 1px solid rgb(255, 255, 255); */
 }
 
+
+/* ------------------------------------ */
+/* 최상단 */
+
+#header {
+    width: 1920px;
+    height: 130px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    align-items: flex-end;
+}
+
+#hearder-name {
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: 165px;
+}
+
+#git, #velog {
+    height: 100px;
+    margin-left: 30px;
+}
+
+#velog {
+    border-radius: 25px;
+}
+
+
+
 /* ------------------------------------ */
 
 /* 왼쪽 부분 */
