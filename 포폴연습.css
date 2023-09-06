@@ -119,6 +119,11 @@ a {
     color: blueviolet;
 }
 
+#profile:hover, #skills:hover, #project:hover{
+    color: tomato;
+    transition: 1s;
+}
+
 #one, #two, #three {
     font-size: 25px;
     margin-left: 30px;
