@@ -18,7 +18,7 @@ main {
 }
 
 div, section {
-    /* border: 1px solid rgb(255, 255, 255); */
+    border: 1px solid rgb(255, 255, 255);
 }
 
 
@@ -40,9 +40,12 @@ div, section {
     margin-left: 165px;
 }
 
+.empty {
+    margin-left: 50px;
+}
+
 #git, #velog {
-    height: 100px;
-    margin-left: 30px;
+    height: 70px;
 }
 
 #velog {
@@ -57,7 +60,7 @@ div, section {
 
 /* 미모티콘 좌, 상 마진 */
 #my-img {
-    margin-top: 113px;
+    margin-top: 50px;
     margin-left: 165px;
 }
 
@@ -74,6 +77,7 @@ div, section {
 #M-phone, #M-email {
     font-size: 32px;
     font-weight: 500;
+    margin-top: 20px
 }
 
 
@@ -110,15 +114,15 @@ div, section {
 
 #one, #two, #three {
     font-size: 25px;
-    display: flex;
-    justify-content: flex-end;
 }
 
+#profile-one, #skills-two, #project-three {
+    display: flex;
+}
 
-/* 밑에 01, 02, 03 숫자를 부모랑 묶고 부모마다
-    사이즈를 다르게 만들어서 우측하단에 위치하도록 수정
-
-
-    시간이 된다면 깃허브,벨로그 주소
-    추가할만한 위치 선정, url로 묶어서 코딩
-*/
+#one, #two, #three{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 30px;
+}
