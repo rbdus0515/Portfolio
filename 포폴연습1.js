@@ -2,10 +2,19 @@
 const darkModeToggle = document.getElementById("darkModeToggle");
 const body = document.body;
 
+// 토글 버튼 클릭 시 다크 모드 토글
+darkModeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+});
+
+
 document.addEventListener("DOMContentLoaded", function () {
-    const bar = document.querySelector(".bar");
-    const maxValue = 200; // 최대 그래프 막대 크기 (px)
-    const percentage = bar.getAttribute("data-value");
-    const width = (parseFloat(percentage) / 100) * maxValue;
-    bar.style.width = width + "px";
+    const skills = document.querySelectorAll(".skill");
+
+    skills.forEach(function (skill) {
+        const skillLevel = skill.querySelector(".skill-level");
+        const skillValue = skillLevel.getAttribute("data-level");
+
+        skillLevel.style.width = skillValue;
+    });
 });

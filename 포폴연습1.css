@@ -4,17 +4,34 @@ body.dark-mode {
     color: #ffffff;
 }
 
-.bar-chart {
-    width: 200px; /* 최대 그래프 막대 크기 */
-    height: 20px; /* 그래프 높이 */
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    overflow: hidden;
+.skill-graph {
+    margin: 20px;
 }
 
-.bar {
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    position: relative;
+}
+
+.skill-level {
     height: 100%;
     background-color: #3498db;
-    width: 0; /* 초기 너비 0, JavaScript로 조정 */
-    transition: width 1s; /* 그래프 애니메이션을 위한 전환 효과 */
+    color: #ffffff;
+    text-align: right;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 0 5px;
+    position: absolute;
+    width: 100%;
 }
