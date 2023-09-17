@@ -1,25 +1,23 @@
-// 토글 버튼과 body 요소 참조
-const darkModeToggle = document.getElementById("darkModeToggle");
+const darkmode = document.getElementById("dark-mode");
 const body = document.body;
 
-// 토글 버튼 클릭 시 다크 모드 토글
-darkModeToggle.addEventListener("click", () => {
+darkmode.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
 });
 
-
-const bars = document.querySelectorAll(".progress-bar .progress");
+// ----------------------------------------------
+const bars = document.querySelectorAll(".skill-persent-bar .persent");
 
 bars.forEach((bar) => {
-    const totalMinwon = parseFloat(bar.getAttribute("data-percent"));
+    const skillsTotal = parseFloat(bar.getAttribute("data-persent"));
 
     let t = 0;
     let animationInterval;
 
     bar.addEventListener("mouseover", () => {
-        if (!animationInterval) {
+        if(!animationInterval) {
             animationInterval = setInterval(() => {
-                if (t > totalMinwon) {
+                if(t > skillsTotal) {
                     clearInterval(animationInterval);
                     animationInterval = null;
                     t = 0;

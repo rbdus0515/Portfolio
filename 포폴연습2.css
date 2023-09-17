@@ -1,0 +1,39 @@
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.skill-percent-bar {
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: gray;
+    font-weight: 600;
+    font-size: 13px;
+    display:flex;
+    align-items: center;
+}
+
+.skill-percent-bar .percent {
+    width: 0%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: skyblue;
+    color: black;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.skill-percent-bar .persent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
