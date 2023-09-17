@@ -18,10 +18,10 @@ body.dark-mode {
     width: 0%;
     height: 20px;
     border-radius: 10px;
-    background-color: skyblue;
-    color: black;
     padding: 0;
     text-align: center;
+    background-color: blueviolet;
+    color: black;
     position: relative;
 }
 

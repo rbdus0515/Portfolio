@@ -6,10 +6,10 @@ darkmode.addEventListener("click", () => {
 });
 
 // ----------------------------------------------
-const bars = document.querySelectorAll(".skill-persent-bar .persent");
+const bars = document.querySelectorAll(".skill-percent-bar .percent");
 
 bars.forEach((bar) => {
-    const skillsTotal = parseFloat(bar.getAttribute("data-persent"));
+    const skillsTotal = parseFloat(bar.getAttribute("data-percent"));
 
     let t = 0;
     let animationInterval;
