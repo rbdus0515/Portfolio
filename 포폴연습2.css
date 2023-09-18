@@ -1,31 +1,36 @@
-body.dark-mode {
+body {
     background-color: black;
     color: white;
 }
 
-.skill-percent-bar {
+.white-mode {
+    background-color: white;
+    color: black;
+}
+
+.percent-bar {
     width: 200px;
     height: 20px;
     border-radius: 10px;
-    background-color: gray;
-    font-weight: 600;
+    background-color: antiquewhite;
     font-size: 13px;
-    display:flex;
+    font-weight: 600;
+    display: flex;
     align-items: center;
 }
 
-.skill-percent-bar .percent {
+.percent-bar .percent {
     width: 0%;
     height: 20px;
     border-radius: 10px;
     padding: 0;
+    background-color: aqua;
     text-align: center;
-    background-color: blueviolet;
     color: black;
     position: relative;
 }
 
-.skill-percent-bar .persent::before {
+.percent-bar .progress::before {
     content: "";
     position: absolute;
     top: 0;
@@ -35,5 +40,5 @@ body.dark-mode {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 600;
+    font-weight: bold;
 }
