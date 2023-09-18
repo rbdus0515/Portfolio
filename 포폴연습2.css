@@ -30,7 +30,7 @@ body {
     position: relative;
 }
 
-.percent-bar .progress::before {
+.percent-bar .percent::before {
     content: "";
     position: absolute;
     top: 0;
