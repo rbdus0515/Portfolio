@@ -1,38 +1,42 @@
-/* 다크 모드에서만 적용되는 스타일 */
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #ffffff;
+body {
+    background-color: black;
+    color: white;
 }
 
-.progress-bar {
+.white-mode {
+    background-color: white;
+    color: black;
+}
+
+.percent-bar {
     width: 200px;
     height: 20px;
     border-radius: 10px;
-    background-color: #dedede;
-    font-weight: 600;
+    background-color: antiquewhite;
     font-size: 13px;
+    font-weight: 600;
     display: flex;
     align-items: center;
 }
 
-.progress-bar .progress {
+.percent-bar .percent {
     width: 0%;
     height: 20px;
     border-radius: 10px;
     padding: 0;
+    background-color: aqua;
     text-align: center;
-    background-color: #4F98FF;
-    color: #111;
-    position: relative; /* 상대 위치 설정 */
+    color: black;
+    position: relative;
 }
 
-.progress-bar .progress::before { /* 가운데 정렬을 위한 가상 요소 추가 */
+.percent-bar .percent::before {
     content: "";
     position: absolute;
     top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
