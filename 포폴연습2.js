@@ -5,7 +5,7 @@ whiteMode.addEventListener("click", () => {
     body.classList.toggle("white-mode");
 });
 
-// -----------------------------------
+// ------------------------------
 const bars = document.querySelectorAll(".percent-bar .percent");
 
 bars.forEach((bar) => {
@@ -23,8 +23,8 @@ bars.forEach((bar) => {
                     t = 0;
                 } else {
                     bar.style.width = (t++) + "%";
-                }    
+                }
             }, 10);
         }
-    });
+    })
 });

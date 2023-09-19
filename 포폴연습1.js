@@ -1,31 +1,29 @@
-// 토글 버튼과 body 요소 참조
-const darkModeToggle = document.getElementById("darkModeToggle");
+const whiteMode = document.getElementById("white-mode");
 const body = document.body;
 
-// 토글 버튼 클릭 시 다크 모드 토글
-darkModeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
+whiteMode.addEventListener("click", () => {
+    body.classList.toggle("white-mode");
 });
 
-
-const bars = document.querySelectorAll(".progress-bar .progress");
+// -----------------------------------
+const bars = document.querySelectorAll(".percent-bar .percent");
 
 bars.forEach((bar) => {
-    const totalMinwon = parseFloat(bar.getAttribute("data-percent"));
+    const totalPercent = parseFloat(bar.getAttribute("data-percent"));
 
     let t = 0;
     let animationInterval;
 
     bar.addEventListener("mouseover", () => {
-        if (!animationInterval) {
+        if(!animationInterval) {
             animationInterval = setInterval(() => {
-                if (t > totalMinwon) {
+                if( t > totalPercent) {
                     clearInterval(animationInterval);
                     animationInterval = null;
                     t = 0;
                 } else {
                     bar.style.width = (t++) + "%";
-                }
+                }    
             }, 10);
         }
     });
