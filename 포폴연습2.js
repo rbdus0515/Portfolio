@@ -28,3 +28,4 @@ bars.forEach((bar) => {
         }
     })
 });
+

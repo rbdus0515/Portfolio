@@ -3,10 +3,33 @@ body {
     color: white;
 }
 
+/* 화이트 모드 토글 버튼 스타일 */
+#mode-toggle {
+    text-align: center;
+    margin: 20px;
+}
+
+#white-mode {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 화이트 모드 스타일 */
 .white-mode {
     background-color: white;
     color: black;
 }
+
+/* 화이트 모드 버튼 스타일 */
+.white-mode #white-mode {
+    background-color: #333;
+    color: white;
+}
+
 
 /* ---------------------- */
 
@@ -43,4 +66,16 @@ body {
     align-items: center;
     justify-content: center;
     font-weight: bold;
+}
+
+/* --------------------------------- */
+
+#skills {
+    font-size: 200px;
+    font-weight: 600;
+}
+
+
+.skill-name {
+    margin-top: 15px;
 }
